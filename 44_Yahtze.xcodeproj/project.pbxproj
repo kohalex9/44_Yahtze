@@ -13,6 +13,7 @@
 		87CC0CE01F4578BA00FD173F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CC0CDF1F4578BA00FD173F /* Assets.xcassets */; };
 		87CC0CE31F4578BA00FD173F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CC0CE11F4578BA00FD173F /* LaunchScreen.storyboard */; };
 		87CC0CEB1F4578D900FD173F /* DieLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0CEA1F4578D900FD173F /* DieLabel.swift */; };
+		87CC0CED1F4597A500FD173F /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0CEC1F4597A500FD173F /* ScoreTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		87CC0CE21F4578BA00FD173F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87CC0CE41F4578BA00FD173F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CC0CEA1F4578D900FD173F /* DieLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieLabel.swift; sourceTree = "<group>"; };
+		87CC0CEC1F4597A500FD173F /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				87CC0CD81F4578BA00FD173F /* AppDelegate.swift */,
 				87CC0CDA1F4578BA00FD173F /* ViewController.swift */,
+				87CC0CEC1F4597A500FD173F /* ScoreTableViewCell.swift */,
 				87CC0CDC1F4578BA00FD173F /* Main.storyboard */,
 				87CC0CEA1F4578D900FD173F /* DieLabel.swift */,
 				87CC0CDF1F4578BA00FD173F /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				87CC0CDB1F4578BA00FD173F /* ViewController.swift in Sources */,
 				87CC0CD91F4578BA00FD173F /* AppDelegate.swift in Sources */,
+				87CC0CED1F4597A500FD173F /* ScoreTableViewCell.swift in Sources */,
 				87CC0CEB1F4578D900FD173F /* DieLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				87CC0CE91F4578BA00FD173F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
