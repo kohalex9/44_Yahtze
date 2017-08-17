@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var labelObj1 = DieLabel()
+    var dices : [DieLabel] = []
+    
+    @IBOutlet var dieLabels: [DieLabel]!
+
+    @IBAction func onRollButtonPressed(_ sender: Any) {
+        
+        for dieLabel in dieLabels {
+            dieLabel.delegate = self
+            
+            if dieLabel.backgroundColor != UIColor.green {
+                dieLabel.roll()
+            }
+            
+            
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController: DieLabelDelegate {
+    func dieBtnTapped(die: DieLabel) {
+        die.actionsToCarryOutAfterDieBtnTapped()
+        dices.append(die)
+        die.backgroundColor = UIColor.green
     }
-
-
 }
 
